@@ -4,7 +4,6 @@
 Author : GordonWei
 Date : 01/04/21
 Comment : Get Expire Data (3 Days Ago)And Delete It Automation.
-HowToUse : Using Crontab To Trigger.
 """
 
 
@@ -29,6 +28,5 @@ subprocess.call('cat 456 | grep ' + today + ' > 123', shell = True)
 readFile = open('./123', 'r')
 readLines = readFile.readlines()
 for line in readLines:
-  print(line)
   line = line.replace('\n','')
   requests.delete('http://kibanaURL:9200/'+ line, auth = HTTPBasicAuth('elastic', 'ChangeMe'))
