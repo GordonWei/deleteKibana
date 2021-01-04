@@ -11,10 +11,10 @@ git clone https://github.com/GordonWei/ITHomeScrapying.git
 - datetime
 
 # How To Use
-## Basic Way
+## Basic 
 Using `crontab` To Schedule Trigger.
 
-## Advance Way
+## Advance 
 Using `api` To Trigger.(e.g. flask or django).
 
 ## Edit File 
@@ -23,3 +23,6 @@ Using `api` To Trigger.(e.g. flask or django).
 ## Option
 - Line 21, Change FileName Or FilePath If You Want.
 - Line 29, Change FileName Or FilePath If You Want.
+
+# Try Run 
+`python3 deleteELK.py`
